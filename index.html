@@ -26,6 +26,7 @@
 
             li {
                 list-style: none;
+                margin: 15% 0;
             }
 
             header,
@@ -36,27 +37,37 @@
                 padding: 2%;
             }
 
-            header section, footer div section {
+            header section, 
+            footer div section {
                 flex: 0 0 calc(33.33% - 20px); /* Three columns with 20px gap */
-                margin-right: 20px;
             }
 
-            header section:last-child, 
-            footer div section:last-child {
-                margin-right: 0;
+            footer hr {
+                margin: 0 2%;
+            }
+
+            ul.navInline li {
+                display: inline;
+            }
+
+            .blockLinks {
+                margin-right: 15%;
             }
 
             .blockLinks li {
                 display: block;
             }
 
+            .contact,
+            .rightFooterLinks,
+            .socialMediaIcons {
+                margin-top: 20px;
+                font-weight:700;
+            }
+
             .footerNav li a,
             .contactInfoUnderline p a {
                 text-decoration: underline;
-            }
-
-            ul.navInline li {
-                display: inline;
             }
 
             .getStarted {
@@ -71,24 +82,31 @@
                 font-size: small;
             }
 
-            .logo {
-                font-weight:700;
-                font-size:larger;
+            .logo,
+            .logoTop {
+                font-weight:700; /* TODO Remove for logo */
+                font-size:larger; /* TODO Remove for logo */
             }
 
-            .contact,
-            .socialMediaIcons {
-                margin-top: 20px;
-            }
-
-            .rightFooterLinks, 
-            .contact {
-                font-weight:700;
+            .rightAlign {
+                text-align: right;
             }
 
             .rightFooterLinks {
                 display: flex;
                 justify-content: space-between;
+            }
+
+            .logoTop {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 320px) {
+                .logoTop {
+                    margin: 15% auto;
+                }
             }
         </style>
     </head>
@@ -116,11 +134,11 @@
 
             <!-- middle logo -->
             <section>
-                <a href="/index.html" class="logo">Logo</a>
+                <a href="/index.html" class="logoTop">Logo</a>
             </section>
 
             <!-- getting started btn  -->
-            <section>
+            <section class="rightAlign">
                 <button class="getStarted">Get Started</button>
             </section>
         </header>
@@ -250,7 +268,7 @@
                 <section>
                     <nav>
                         <small>
-                            <ul class="navInline footerNav">
+                            <ul class="navInline footerNav rightAlign">
                                     <li>
                                         <a href="#">Privacy Policy</a>
                                     </li>
