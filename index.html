@@ -1,18 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Breakdown</title>
-</head>
-<body>
-    <h1>Pages</h1>
-    <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Portfolio</a></li>
-        <li><a href="/mystery">Services</a></li>
-    </ul>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page Breakdown</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            address {
+                font-style: normal;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            header,
+            footer div {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 2%;
+            }
+
+            header section, footer div section {
+                flex: 0 0 calc(33.33% - 20px); /* Three columns with 20px gap */
+                margin-right: 20px;
+            }
+
+            header section:last-child, 
+            footer div section:last-child {
+                margin-right: 0;
+            }
+
+            .blockLinks li {
+                display: block;
+            }
+
+            .footerNav li a,
+            .contactInfoUnderline p a {
+                text-decoration: underline;
+            }
+
+            ul.navInline li {
+                display: inline;
+            }
+
+            .getStarted {
+                background-color: #000;
+                color: #fff;
+                padding: 1.5%;
+                width: 25%;
+                border: none;
+            }
+
+            .getStarted {
+                font-size: small;
+            }
+
+            .logo {
+                font-weight:700;
+                font-size:larger;
+            }
+
+            .contact,
+            .socialMediaIcons {
+                margin-top: 20px;
+            }
+
+            .rightFooterLinks, 
+            .contact {
+                font-weight:700;
+            }
+
+            .rightFooterLinks {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- top left nav links -->
+            <section>
+                <ul class="navInline">
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li>
+                        <a href="/portfolio.html">Portfolio</a>
+
+                        <label for="portfolio">v</label>
+
+                        <select name="port-menu" id="portfolio" style="display:none">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- middle logo -->
+            <section>
+                <a href="/home.html" class="logo">Logo</a>
+            </section>
+
+            <!-- getting started btn  -->
+            <section>
+                <button class="getStarted">Get Started</button>
+            </section>
+        </header>
+
+        <hr/>
+
+        <main>
+            <section>
+                Hero Header Section: Showcase Gifted Media Productions' services with a compelling image and value proposition
+            </section>
+
+            <section>
+                Feature Section: Highlight the podcast production service with a brief description
+            </section>
+            
+            <section>
+                Feature Section: Showcase the audio & video editing services
+            </section>
+            
+            <section>
+                Feature Section: Detail the live streaming production capabilities
+            </section>
+            
+            <section>
+                Feature Section: Present the photography services offered by the company
+            </section>
+            
+            <section>
+                Benefits Section: Describe the advantages of choosing Gifted Media Productions for A/V needs
+            </section>
+            
+            <section>
+                Services Section: Provide an overview of all services offered with links to each service detail page
+            </section>
+            
+            <section>
+                Team Section: Introduce the team behind Gifted Media Productions with photos and bios
+            </section>
+            
+            <section>
+                Testimonial Section: Feature client testimonials to build trust and credibility
+            </section>
+            
+            <section>
+                CTA Section: Encourage visitors to get in touch for a custom quote or consultation
+            </section>
+            
+            <section>
+                Contact Section: Display contact information including email, phone, and physical address
+            </section>
+            
+            <section>
+                FAQ Section: Answer common questions about the services and processes
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <!-- Left contact  -->
+                <section>
+                    <a href="#" class="logo">Logo</a>
+
+                    <small class="contactInfoUnderline">
+                        <address>
+                            <strong>123 Main St.</strong><br />
+                            Level 1, 12 Sample St, Sydney NSW 2000
+                        </address>
+
+                        <p class="contact">
+                            Contact:
+                        </p>
+                        
+                        <p>
+                            <a href="#">Call us now</a> - <a href="#">info@giftedmedia.com</a>
+                        </p>
+                    </small>
+
+                    <div class="socialMediaIcons">
+                        <img src="" alt="[]" />
+                        <img src="" alt="[]" />
+                        <img src="" alt="[]" />
+                        <img src="" alt="[]" />
+                        <img src="" alt="[]" />
+                    </div>
+                </section>
+
+                <section></section>
+
+                <!-- Right - Two columns of links  -->
+                <section>
+                    <nav>
+                        <ul>
+                            <small class="rightFooterLinks">
+                                <span class="blockLinks">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </span>
+
+                                <span class="blockLinks">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </span>
+                            </small>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+
+            <hr />
+
+            <div>
+                <!-- Bottom section -->
+                <section>
+                    <span>
+                        <small>© 2023 Gifted Media Productions. All rights reserved.</small>
+                    </span>
+                </section>
+
+                <section></section>
+
+                <section>
+                    <nav>
+                        <small>
+                            <ul class="navInline footerNav">
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms and Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cookie Policy</a>
+                                    </li>
+                            </ul>
+                        </small>
+                    </nav>
+                </section>
+            </div>
+        </footer>
+    </body>
 </html>
