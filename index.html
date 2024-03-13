@@ -26,11 +26,13 @@
 
             li {
                 list-style: none;
-                margin: 15% 0;
             }
 
             header,
-            footer div {
+            footer div,
+            .twoCols,
+            .threeCols,
+            .fourCols {
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -38,7 +40,8 @@
             }
 
             header section, 
-            footer div section {
+            footer div section,
+            .threeCols div {
                 flex: 0 0 calc(33.33% - 20px); /* Three columns with 20px gap */
             }
 
@@ -46,12 +49,17 @@
                 margin: 0 2%;
             }
 
+            main section {
+                margin-bottom: 3%;
+                padding: 0 2%;
+            }
+
             ul.navInline li {
                 display: inline;
             }
 
             .blockLinks {
-                margin-right: 15%;
+                margin: 15% 15% 15% 0;
             }
 
             .blockLinks li {
@@ -68,6 +76,15 @@
             .footerNav li a,
             .contactInfoUnderline p a {
                 text-decoration: underline;
+            }
+
+            .fourCols img {
+                height: 200px;
+                width: 200px;
+            }
+
+            .fourCols li {
+                flex: 0 0 calc(24% - 20px);
             }
 
             .getStarted {
@@ -88,6 +105,12 @@
                 font-size:larger; /* TODO Remove for logo */
             }
 
+            .logoTop {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
             .rightAlign {
                 text-align: right;
             }
@@ -97,10 +120,17 @@
                 justify-content: space-between;
             }
 
-            .logoTop {
-                display: block;
-                width: 100%;
-                text-align: center;
+            .twoCols {
+                /* height: 500px; */
+            }
+
+            .twoCols div {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+            .twoCols img {
+                height: 200px;
+                width: 200px;
             }
 
             @media screen and (max-width: 320px) {
@@ -146,52 +176,376 @@
         <hr/>
 
         <main>
+            <section class="twoCols">
+                <div>
+                    <!-- Hero Header Section: Showcase Gifted Media Productions' services with a compelling image and value proposition -->
+                    <p>
+                        <h1>Captivating Media Production Services for You</h1>
+                    </p>
+
+                    <p>
+                        At Gifted Media Productions, we specialize in providing top-notch podcast production services. Our team of experts will help you create high-quality audio content that engages your audience and elevates your brand. Whether you're just starting out or looking to take your podcast to the next level, we have the skills and experience to bring your vision to life.
+                    </p>
+
+                    <button>Learn More</button> &nbsp; <button>Sign Up</button>
+                </div>
+
+                <div id="carouselContainer"></div>
+            </section>
+
+            <section class="twoCols">
+                <div>
+                    <!-- Feature Section: Highlight the podcast production service with a brief description -->
+                    <p>
+                        <h2>Empower your voice with our professional podcast production services.</h2>
+                    </p>
+                    <p>
+                        At Gifted Media Productions, we specialize in providing top-notch podcast production services. Our team of experts will help you create high-quality audio content that engages your audience and elevates your brand. Whether you're just starting out or looking to take your podcast to the next level, we have the skills and experience to bring your vision to life.
+                    </p>
+
+                    <p>
+                        <p><h3>[] Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3></p>
+                        <p><h3>[] Tempore modi quasi voluptate beatae repellat totam.</h3></p>
+                        <p><h3>[] Perspiciatis quis, sed omnis laboriosam facilis.</h3></p>
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/public/imgs/two.png" alt="two" />
+                </div>
+            </section>
+            
+            <section class="twoCols">
+                <div>
+                    <!-- Feature Section: Showcase the audio & video editing services -->
+                    <p>
+                        <h2>Professional Audio & Video Editing Services for Your Podcasts and Videos</h2>
+                    </p>
+                    <p>
+                        At Gifted Media Productions, we specialize in providing top-notch audio & video editing services to enhance the quality and impact of your podcasts and videos. Our team of experts utilizes state-of-the-art technology and creative techniques to deliver exceptional results that captivate your audience.
+                    </p>
+                    <div>
+                        <p>
+                            <h3>Expertise. Precision.</h3>
+
+                            <p>Our skilled editors bring their expertise and precision to every project, ensuring seamless transitions and polished content.</p>
+                        </p>
+
+                        <p>
+                            <h3>Quality. Efficiency.</h3>
+
+                            <p>With our streamlined workflow, we deliver high-quality results efficiently, meeting your deadlines and exceeding expectations.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="/public/imgs/three.png" alt="three" />
+                </div>
+            </section>
+            
+            <section class="twoCols">
+                <div>
+                    <!-- Feature Section: Detail the live streaming production capabilities -->
+
+                    <h3>Streamline</h3>
+
+                    <h2>Elevate Your Live Streaming Production Experience</h2>
+
+                    <p>
+                        At Gifted Media Productions, we specialize in delivering high-quality live streaming production services. Whether you're hosting a virtual event, webinar, or conference, our team of experts will ensure a seamless and professional live streaming experience. From setting up the equipment to managing the technical aspects, we've got you covered.
+                    </p>
+
+                    <button></button> <a href="">Contact Us</a>
+                </div>
+
+                <div>
+                    <img src="/public/imgs/four.png" alt="four" />
+                </div>
+            </section>
+            
+            <section class="twoCols">
+                <div>
+                    <!-- Feature Section: Present the photography services offered by the company -->
+                    <h3>Captivating</h3>
+
+                    <h2>Unleash the Beauty Through Our Photography Services</h2>
+
+                    <p>
+                        At Gifted Media Productions, we specialize in capturing the essence of every moment through our professional photography services. Whether it's a wedding, corporate event, or personal portrait, our skilled photographers will ensure that your memories are beautifully preserved
+                    </p>
+
+                    <button>Learn More</button> <a href="">Contact Us</a>
+                </div>
+
+                <div>
+                    <img src="/public/imgs/five.png" alt="five" />
+                </div>
+            </section>
+
+            <section class="twoCols">
+                <div>
+                    <!-- Benefits Section: Describe the advantages of choosing Gifted Media Productions for A/V needs -->
+                    <p>
+                        <h2>Experience top-quality A/V Production with Gifted Media Productions.</h2>
+                    </p>
+                    <p>
+                        Our team of experts delivers professional podcast, A/V, live streaming production, audio & video editing, and photography services to meet all your needs.
+                    </p>
+                    <div>
+                        <p>
+                            <h3>Expertise</h3>
+
+                            <p>Benefit from our extensive expertise in A/V production and post-production services.</p>
+                        </p>
+
+                        <p>
+                            <h3>Quality</h3>
+
+                            <p>We ensure top-notch quality in every aspect of our A/V services and deliver exceptional results.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="/public/imgs/six.png" alt="six" />
+                </div>
+            </section>
+            
             <section>
-                Hero Header Section: Showcase Gifted Media Productions' services with a compelling image and value proposition
+                <!-- Services Section: Provide an overview of all services offered with links to each service detail page -->
+                <h2>Podcast Production Services</h2>
+
+                <section class="threeCols">
+                    <div>
+                        <img src="" alt="">
+                        
+                        <h3>A/V Production Services</h3>
+                        
+                        <p>We offer professional podcast and A/V production services to help you create high-quality content.</p>
+
+                        <a href="">Learn more ></a>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        
+                        <h3>A/V Production Services</h3>
+                        
+                        <p>We offer professional podcast and A/V production services to help you create high-quality content.</p>
+
+                        <a href="">Learn more ></a>
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        
+                        <h3>A/V Production Services</h3>
+                        
+                        <p>We offer professional podcast and A/V production services to help you create high-quality content.</p>
+
+                        <a href="">Learn more ></a>
+                    </div>
+                </section>
+            </section>
+            
+            <section>
+                <!-- Team Section: Introduce the team behind Gifted Media Productions with photos and bios -->
+                <h3>Passionate</h3>
+
+                <h2>Meet Our Team</h2>
+
+                <p>Get to know the talented individuals behind Gifted Media Productions.</p>
+
+                <ul class="fourCols">
+                    <li>
+                        <img src="/public/imgs/one.png" alt="one" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                    <li>
+                        <img src="/public/imgs/two.png" alt="two" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                    <li>
+                        <img src="/public/imgs/three.png" alt="three" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                    <li>
+                        <img src="/public/imgs/four.png" alt="four" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                </ul>
+
+                <ul class="fourCols">
+                    <li>
+                        <img src="/public/imgs/five.png" alt="five" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                    <li>
+                        <img src="/public/imgs/six.png" alt="six" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                    <li>
+                        <img src="/public/imgs/one.png" alt="one" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                    <li>
+                        <img src="/public/imgs/two.png" alt="two" />
+                        <h4>John Doe</h4>
+                        <h5>Podcast Producer</h5>
+                        <p>John is a skilled podcast producer with a passion for storytelling and audio production.</p>
+                        [] [] []
+                    </li>
+                </ul>
             </section>
 
             <section>
-                Feature Section: Highlight the podcast production service with a brief description
+                <h2>We're Hiring!</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <button>Open positions</button>
             </section>
             
             <section>
-                Feature Section: Showcase the audio & video editing services
+                <!-- Testimonial Section: Feature client testimonials to build trust and credibility -->
+                <h2>Happy Clients</h2>
+
+                <h3>Hear what our clients have to say about us</h3>
+
+                <div class="twoCols">
+                    <div>
+                        <span>*****</span>
+                        <p>Working with Gifted Media Productions has been an absolute pleasure. Their attention to detail and professionalism is unmatched</p>
+                        <div>
+                            <img src="" alt="Portrait" />
+                            <h4>John Doe</h4>
+                            <p>CEO, Company XYZ</p>
+                        </div>
+                        <div>
+                            <img src="" alt="Logo" />
+                            <h4>Companee</h4>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>*****</span>
+                        <p>The team at Gifted Media Productions exceeded our expectations. They delivered high-quality work and were a joy to collaborate with</p>
+                        <div>
+                            <img src="" alt="Portrait" />
+                            <h4>John Doe</h4>
+                            <p>CEO, Company XYZ</p>
+                        </div>
+                        <div>
+                            <img src="" alt="Logo" />
+                            <h4>Companee</h4>
+                        </div>
+                    </div>
+                </div>
             </section>
             
             <section>
-                Feature Section: Detail the live streaming production capabilities
+                <div>
+                    <!-- CTA Section: Encourage visitors to get in touch for a custom quote or consultation -->
+                    <h2>Transforming Your Vision into Reality</h2>
+
+                    <p>We specialize in podcast, A/V, live streaming production, audio & video editing, and photography services.</p>
+
+                    <button>Contact</button> <button>Learn More</button>
+                </div>
             </section>
             
             <section>
-                Feature Section: Present the photography services offered by the company
+                <section>
+                    <div>
+                        <!-- Contact Section: Display contact information including email, phone, and physical address -->
+                        <h3>Professional</h3>
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to hear from you. Contact us for any inquiries or collaborations.</p>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <h3>[] Email</h3>
+                                <p>info@giftedmediaproductions.com</p>
+                            </li>
+                            <li>
+                                <h3>[] Phone</h3>
+                                <p>+1 (646) 893-9658</p>
+                            </li>
+                            <li>
+                                <h3>[] Office</h3>
+                                <p>123 Main St, Anytown, US 12345</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <!-- Map: Google? Apple?  -->
+                </section>
             </section>
             
             <section>
-                Benefits Section: Describe the advantages of choosing Gifted Media Productions for A/V needs
+                <div>
+                    <!-- FAQ Section: Answer common questions about the services and processes -->
+                    <h2>Frequently Asked Questions</h2>
+
+                    <p>Find answers to common questions about our services and processes.</p>
+
+                    <br />
+
+                    <ul>
+                        <li>
+                            <h3>What services do you offer?</h3>
+                            <p>We provide podcast, A/V, live streaming production, audio & video editing, and photography services.</p>
+                        </li>
+                        <li>
+                            <h3>How can I contact you?</h3>
+                            <p>You can reach us through phone, email, or by filling out the contact form on our website.</p>
+                        </li>
+                        <li>
+                            <h3>Do you offer live streaming services?</h3>
+                            <p>Yes, we specialize in live streaming production for events, conferences, and webinars.</p>
+                        </li>
+                        <li>
+                            <h3>Can you edit my audio and video files?</h3>
+                            <p>Absolutely! We have experienced editors who can enhance the quality of your audio and video content.</p>
+                        </li>
+                        <li>
+                            <h3>Do you provide photography services?</h3>
+                            <p>Yes, we offer professional photography services for various occasions and events.</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            
+
             <section>
-                Services Section: Provide an overview of all services offered with links to each service detail page
-            </section>
-            
-            <section>
-                Team Section: Introduce the team behind Gifted Media Productions with photos and bios
-            </section>
-            
-            <section>
-                Testimonial Section: Feature client testimonials to build trust and credibility
-            </section>
-            
-            <section>
-                CTA Section: Encourage visitors to get in touch for a custom quote or consultation
-            </section>
-            
-            <section>
-                Contact Section: Display contact information including email, phone, and physical address
-            </section>
-            
-            <section>
-                FAQ Section: Answer common questions about the services and processes
+                <h2>Still have questions?</h2>
+                <p>Contact us for more information.</p>
+                <button>Contact</button>
             </section>
         </main>
 
@@ -284,5 +638,33 @@
                 </section>
             </div>
         </footer>
+
+        <script>
+            const carouselContainer = document.getElementById("carouselContainer");
+
+            const carousel = document.createElement("div");
+
+            const imgOne = document.createElement("img");
+            imgOne.setAttribute("src", "/public/imgs/one.png");
+            const imgTwo = document.createElement("img");
+            imgTwo.setAttribute("src", "/public/imgs/two.png");
+            const imgThree = document.createElement("img");
+            imgThree.setAttribute("src", "/public/imgs/three.png");
+            const imgFour = document.createElement("img");
+            imgFour.setAttribute("src", "/public/imgs/four.png");
+            const imgFive = document.createElement("img");
+            imgFive.setAttribute("src", "/public/imgs/five.png");
+            const imgSix = document.createElement("img");
+            imgSix.setAttribute("src", "/public/imgs/six.png");
+
+            carousel.appendChild(imgOne);
+            carousel.appendChild(imgTwo);
+            carousel.appendChild(imgThree);
+            carousel.appendChild(imgFour);
+            carousel.appendChild(imgFive);
+            carousel.appendChild(imgSix);
+
+            carouselContainer.appendChild(carousel);
+        </script>
     </body>
 </html>
