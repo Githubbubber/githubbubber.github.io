@@ -4,141 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Page Breakdown</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
+        <title>GMP - Welcome</title>
 
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            address {
-                font-style: normal;
-            }
-
-            li {
-                list-style: none;
-            }
-
-            header,
-            footer div,
-            .twoCols,
-            .threeCols,
-            .fourCols {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                padding: 2%;
-            }
-
-            header section, 
-            footer div section,
-            .threeCols div {
-                flex: 0 0 calc(33.33% - 20px); /* Three columns with 20px gap */
-            }
-
-            footer hr {
-                margin: 0 2%;
-            }
-
-            main section {
-                margin-bottom: 3%;
-                padding: 0 2%;
-            }
-
-            ul.navInline li {
-                display: inline;
-            }
-
-            .blockLinks {
-                margin: 15% 15% 15% 0;
-            }
-
-            .blockLinks li {
-                display: block;
-            }
-
-            .contact,
-            .rightFooterLinks,
-            .socialMediaIcons {
-                margin-top: 20px;
-                font-weight:700;
-            }
-
-            .footerNav li a,
-            .contactInfoUnderline p a {
-                text-decoration: underline;
-            }
-
-            .fourCols img {
-                height: 200px;
-                width: 200px;
-            }
-
-            .fourCols li {
-                flex: 0 0 calc(24% - 20px);
-            }
-
-            .getStarted {
-                background-color: #000;
-                color: #fff;
-                padding: 1.5%;
-                width: 25%;
-                border: none;
-            }
-
-            .getStarted {
-                font-size: small;
-            }
-
-            .logo,
-            .logoTop {
-                font-weight:700; /* TODO Remove for logo */
-                font-size:larger; /* TODO Remove for logo */
-            }
-
-            .logoTop {
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
-
-            .rightAlign {
-                text-align: right;
-            }
-
-            .rightFooterLinks {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .twoCols {
-                /* height: 500px; */
-            }
-
-            .twoCols div {
-                flex: 0 0 calc(50% - 20px);
-            }
-
-            .twoCols img {
-                height: 200px;
-                width: 200px;
-            }
-
-            @media screen and (max-width: 320px) {
-                .logoTop {
-                    margin: 15% auto;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/public/css/styles.css" />
     </head>
 
     <body>
@@ -164,12 +32,12 @@
 
             <!-- middle logo -->
             <section>
-                <a href="/index.html" class="logoTop">Logo</a>
+                <a href="/index.html"><img class="logoTop" src="/public/imgs/logo.jpg" /></a>
             </section>
 
             <!-- getting started btn  -->
             <section class="rightAlign">
-                <button class="getStarted">Get Started</button>
+                <button class="blackCTABtn topNavGS">Get Started</button>
             </section>
         </header>
 
@@ -179,9 +47,7 @@
             <section class="twoCols">
                 <div>
                     <!-- Hero Header Section: Showcase Gifted Media Productions' services with a compelling image and value proposition -->
-                    <p>
-                        <h1>Captivating Media Production Services for You</h1>
-                    </p>
+                    <h1>Captivating Media Production Services for You</h1>
 
                     <p>
                         At Gifted Media Productions, we specialize in providing top-notch podcast production services. Our team of experts will help you create high-quality audio content that engages your audience and elevates your brand. Whether you're just starting out or looking to take your podcast to the next level, we have the skills and experience to bring your vision to life.
@@ -465,15 +331,14 @@
                 </div>
             </section>
             
-            <section>
-                <div>
+            <section class="cta2Left">
                     <!-- CTA Section: Encourage visitors to get in touch for a custom quote or consultation -->
                     <h2>Transforming Your Vision into Reality</h2>
 
                     <p>We specialize in podcast, A/V, live streaming production, audio & video editing, and photography services.</p>
 
-                    <button>Contact</button> <button>Learn More</button>
-                </div>
+                    <button class="blackCTABtn">Contact</button>
+                    <button class="transCTABtn">Learn More</button>
             </section>
             
             <section>
@@ -553,7 +418,7 @@
             <div>
                 <!-- Left contact  -->
                 <section>
-                    <a href="#" class="logo">Logo</a>
+                    <a href="/index.html"><img class="logo" src="/public/imgs/logo.jpg" /></a>
 
                     <small class="contactInfoUnderline">
                         <address>
@@ -613,7 +478,7 @@
                 <!-- Bottom section -->
                 <section>
                     <span>
-                        <small>© 2023 Gifted Media Productions. All rights reserved.</small>
+                        <small>© <span id="currentYear"></span> Gifted Media Productions. All rights reserved.</small>
                     </span>
                 </section>
 
@@ -640,9 +505,11 @@
         </footer>
 
         <script>
+            const currentYear = document.getElementById("currentYear");
             const carouselContainer = document.getElementById("carouselContainer");
-
             const carousel = document.createElement("div");
+
+            currentYear.textContent = new Date().getFullYear().toString();
 
             const imgOne = document.createElement("img");
             imgOne.setAttribute("src", "/public/imgs/one.png");

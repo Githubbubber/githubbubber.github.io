@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+footer hr {
+    margin: 0 2%;
+}
+
+address,
+h1,
+h2,
+h3,
+li,
+p,
+small,
+strong,
+.bottomLogo {
+    margin: 2% auto;
+}
+
+header,
+footer div,
+.twoCols,
+.threeCols,
+.fourCols {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+header {
+    padding: 1% 2%;
+}
+
+header section,
+footer div section,
+.threeCols div {
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+li {
+    list-style: none;
+}
+
+main section {
+    margin-bottom: 3%;
+    padding: 4% 2%;
+}
+
+main section.cta2Left {
+    margin-bottom: 3%;
+    padding: 10% 2%;
+    height: 50%;
+    background: url("../imgs/placeholder-wide.jpg") center center;
+}
+
+ul.navInline li {
+    display: inline;
+}
+
+.blackCTABtn,
+.transCTABtn {
+    color: #fff;
+    padding: 1% 0;
+    font-size: small;
+}
+
+.blackCTABtn {
+    background-color: #000;
+    border: none;
+    width: 15%;
+}
+
+.blockLinks {
+    margin: 15% 15% 15% 0;
+}
+
+.blockLinks li {
+    display: block;
+}
+
+.contact,
+.rightFooterLinks,
+.socialMediaIcons {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.footerNav li a,
+.contactInfoUnderline p a {
+    text-decoration: underline;
+}
+
+.fourCols img {
+    height: 200px;
+    width: 200px;
+}
+
+.fourCols li {
+    flex: 0 0 calc(24% - 20px);
+}
+
+.logo,
+.logoTop {
+    width: 20%;
+    height: auto;
+}
+
+.logoTop {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.rightFooterLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topNavGS {
+    width: 40%;
+    padding: 4%;
+}
+
+.twoCols div {
+    flex: 0 0 calc(50% - 20px);
+}
+
+.twoCols img {
+    height: 200px;
+    width: 200px;
+}
+
+.transCTABtn {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 15%;
+}
+
+@media screen and (max-width: 320px) {
+    .logoTop {
+        margin: 15% auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .twoCols {
+        height: 500px;
+    }
+}
