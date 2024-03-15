@@ -94,6 +94,9 @@ ul.navInline li {
     display: block;
 }
 
+.centeredCopy {
+    text-align: center;
+}
 .contact,
 .rightFooterLinks,
 .socialMediaIcons {
@@ -164,6 +167,6 @@ ul.navInline li {
 
 @media screen and (min-width: 800px) {
     .twoCols {
-        height: 500px;
+        /* height: 500px; */
     }
 }
