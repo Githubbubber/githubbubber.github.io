@@ -170,3 +170,44 @@ ul.navInline li {
         /* height: 500px; */
     }
 }
+
+/*
+ Navbar content
+*/
+/* Navbar content */
+nav {
+    padding-left: 50px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center items */
+    background-color: #FFF;
+}
+
+nav li {
+    margin: 0 10px; /* Add spacing between items */
+}
+
+/* Center the logo */
+nav .logo {
+    margin-left: auto; /* Push the logo and subsequent items to the right */
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+    color: #FFF;
+}
