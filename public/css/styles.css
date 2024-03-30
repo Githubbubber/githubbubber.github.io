@@ -211,3 +211,22 @@ nav li a:hover {
     background-color: #111;
     color: #FFF;
 }
+
+.container {
+    width: 100%;
+    display: flex; /* Utilize Flexbox for layout */
+}
+
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 20px;
+}
+
+.left {
+
+}
+
+.right {
+
+}
