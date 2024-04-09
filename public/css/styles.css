@@ -147,6 +147,15 @@ ul.navInline li {
     margin-left: 2%;
 }
 
+.greyBox {
+    background-color: #D6D6D6;
+    margin-top: 10px;
+    height: 100%;
+    text-align: center;
+    h3 {
+        margin: 25px 0px;
+    }
+}
 .faqLeft,
 .faqRight {
     flex: 0 0 calc(50%);
