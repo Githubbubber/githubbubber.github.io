@@ -7,6 +7,7 @@
 
         <link rel="icon" type="image/x-icon" href="/public/imgs/favicon.ico" />
         <link rel="stylesheet" href="/public/css/styles.css" />
+        <link rel="stylesheet" href="/public/css/accordion.css" />
 
         <title>GMP - Welcome</title>
     </head>
@@ -399,26 +400,56 @@
 
                     <br />
 
-                    <ul>
-                        <li>
-                            <h3>What services do you offer?</h3>
-                            <p>We provide podcast, A/V, live streaming production, audio & video editing, and photography services.</p>
+                    <ul class="ev-accordion-items">
+                        <li class="ev-accordion-item-container">
+                            <h3 class="accordion">
+                                <a>What services do you offer?</a>
+                                <span>+</span>
+                            </h3>
+
+                            <p class="panel">
+                                We provide podcast, A/V, live streaming production, audio & video editing, and photography services.
+                            </p>
                         </li>
-                        <li>
-                            <h3>How can I contact you?</h3>
-                            <p>You can reach us through phone, email, or by filling out the contact form on our website.</p>
+                        <li class="ev-accordion-item-container">
+                            <h3 class="accordion">
+                                <a>How can I contact you?</a>
+                                <span>+</span>
+                            </h3>
+
+                            <p class="panel">
+                                You can reach us through phone, email, or by filling out the contact form on our website.
+                            </p>
                         </li>
-                        <li>
-                            <h3>Do you offer live streaming services?</h3>
-                            <p>Yes, we specialize in live streaming production for events, conferences, and webinars.</p>
+                        <li class="ev-accordion-item-container">
+                            <h3 class="accordion">
+                                <a>Do you offer live streaming services?</a>
+                                <span>+</span>
+                            </h3>
+
+                            <p class="panel">
+                                Yes, we specialize in live streaming production for events, conferences, and webinars.
+                            </p>
                         </li>
-                        <li>
-                            <h3>Can you edit my audio and video files?</h3>
-                            <p>Absolutely! We have experienced editors who can enhance the quality of your audio and video content.</p>
+                        <li class="ev-accordion-item-container">
+                            <h3 class="accordion">
+                                <a>Can you edit my audio and video files?</a>
+                                <span>+</span>
+                            </h3>
+
+                            <p class="panel">
+                                Absolutely! We have experienced editors who can enhance the quality of your audio and video content.
+                            </p>
                         </li>
-                        <li>
-                            <h3>Do you provide photography services?</h3>
-                            <p>Yes, we offer professional photography services for various occasions and events.</p>
+                        <li class="ev-accordion-item-container">
+                            <h3 class="accordion">
+                                <a>Do you provide photography services?</a>
+                                <span>+</span>
+                            </h3>
+
+                            <p class="panel">
+                                Yes, we offer professional photography services for various occasions and events.
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -598,6 +629,24 @@
             const currentYear = document.getElementById("currentYear");
 
             currentYear.textContent = new Date().getFullYear().toString();
+        </script>
+
+        <script>
+            const acc = document.getElementsByClassName("accordion");
+
+            for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+
+                    const panel = this.nextElementSibling;
+
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
         </script>
     </body>
 </html>
