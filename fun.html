@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/fun.css" />
+
     <title>Random Things</title>
   </head>
 
@@ -58,5 +62,164 @@
       &#x1F4CB; - todo clipboard <br />
       Not showing up: &#x1F56C;, &#x2B6E;, &#x21bb;, and &#x1F5B3;
     </p>
+
+    <div id="container">
+      <div id="monitor">
+        <div id="monitorscreen">
+          <header>
+            <!-- top left nav links -->
+            <section>
+                <ul class="navInline">
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li>
+                        <a href="/portfolio.html">Portfolio</a>
+
+                        <label for="portfolio">v</label>
+
+                        <select name="port-menu" id="portfolio" style="display:none">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- middle logo -->
+            <section>
+                <a href="/index.html"><img class="logoTop" src="/public/imgs/logo.jpg" /></a>
+            </section>
+
+            <!-- getting started btn  -->
+            <section class="rightAlign">
+                <button class="blackCTABtn topNavGS">Get Started</button>
+            </section>
+        </header>
+        <hr/>
+
+        <main>
+            <section class="twoCols">
+                <div>
+                    <!-- Hero Header Section: Showcase Gifted Media Productions' services with a compelling image and value proposition -->
+                    <h1>Captivating Media Production Services for You</h1>
+
+                    <p>
+                        At Gifted Media Productions, we specialize in providing top-notch podcast production services. Our team of experts will help you create high-quality audio content that engages your audience and elevates your brand. Whether you're just starting out or looking to take your podcast to the next level, we have the skills and experience to bring your vision to life.
+                    </p>
+
+                    <button>Learn More</button> &nbsp; <button>Sign Up</button>
+                </div>
+
+                <div class="carouselContainer">
+                    <div class="column">
+                    <img src="/public/imgs/one.jpg" alt="Image 1">
+                    <img src="/public/imgs/two.jpg" alt="Image 2">
+                    <img src="/public/imgs/three.jpg" alt="Image 3">
+                    <img src="/public/imgs/four.jpg" alt="Image 4">
+                    <img src="/public/imgs/five.jpg" alt="Image 5">
+                    </div>
+                    <div class="column">
+                    <img src="/public/imgs/six.jpg" alt="Image 6">
+                    <img src="/public/imgs/seven.jpg" alt="Image 7">
+                    <img src="/public/imgs/eight.jpg" alt="Image 8">
+                    <img src="/public/imgs/nine.jpg" alt="Image 9">
+                    <img src="/public/imgs/ten.jpg" alt="Image 10">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+          <div>
+              <!-- Left contact  -->
+              <section>
+                  <a href="/index.html"><img class="logo" src="/public/imgs/logo.jpg" /></a>
+
+                  <small class="contactInfoUnderline">
+                      <address>
+                          <strong>123 Main St.</strong><br />
+                          Level 1, 12 Sample St, Sydney NSW 2000
+                      </address>
+
+                      <p class="contact">
+                          Contact:
+                      </p>
+                      
+                      <p>
+                          <a href="#">Call us now</a> - <a href="#">info@giftedmedia.com</a>
+                      </p>
+                  </small>
+
+                  <div class="socialMediaIcons">
+                      <img src="" alt="[]" />
+                      <img src="" alt="[]" />
+                      <img src="" alt="[]" />
+                      <img src="" alt="[]" />
+                      <img src="" alt="[]" />
+                  </div>
+              </section>
+
+              <section></section>
+
+              <!-- Right - Two columns of links  -->
+              <section>
+                  <nav>
+                      <ul>
+                          <small class="rightFooterLinks">
+                              <span class="blockLinks">
+                                  <li><a href="/about.html">About Us</a></li>
+                                  <li><a href="/services.html">Services</a></li>
+                                  <li><a href="/portfolio.html">Portfolio</a></li>
+                                  <li><a href="#">Testimonials</a></li>
+                                  <li><a href="#">Contact Us</a></li>
+                              </span>
+
+                              <span class="blockLinks">
+                                  <li><a href="#">FAQ</a></li>
+                                  <li><a href="#">Blog</a></li>
+                                  <li><a href="#">Terms of Use</a></li>
+                                  <li><a href="#">Privacy Policy</a></li>
+                                  <li><a href="#">Sitemap</a></li>
+                              </span>
+                          </small>
+                      </ul>
+                  </nav>
+              </section>
+          </div>
+
+          <hr />
+
+          <div>
+              <!-- Bottom section -->
+              <section>
+                  <span>
+                      <small>© <span id="currentYear"></span> Gifted Media Productions. All rights reserved.</small>
+                  </span>
+              </section>
+
+              <section></section>
+
+              <section>
+                  <nav>
+                      <small>
+                          <ul class="navInline footerNav rightAlign">
+                                  <li>
+                                      <a href="#">Privacy Policy</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Terms and Conditions</a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Cookie Policy</a>
+                                  </li>
+                          </ul>
+                      </small>
+                  </nav>
+              </section>
+          </div>
+      </footer>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
