@@ -210,7 +210,8 @@ ul.navInline li {
     width: 200px;
 }
 
-.fourCols li {
+.fourCols li,
+.fourCols article {
     flex: 0 0 calc(24% - 20px);
 }
 
