@@ -12,67 +12,371 @@
     </head>
 
     <body>
-        <nav>
-            <h1>Navbar</h1>
-            
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/portfolio.html">Portfolio</a></li>
-                <li>Projects</li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/services-detail.html">Services Detail</a></li>
-            </ul>
-        </nav>
+        <div id="monitor">
+            <div id="monitorscreen">
+                <header>
+                    <!-- top left nav links -->
+                    <section>
+                        <ul class="navInline">
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li>
+                                <a href="/portfolio.html">Portfolio</a>
+
+                                <label for="portfolio">v</label>
+
+                                <select name="port-menu" id="portfolio" style="display:none">
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                    <option value="three">Three</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- middle logo -->
+                    <section>
+                        <a href="/index.html"><img class="logoTop" src="/public/imgs/logo.jpg" /></a>
+                    </section>
+
+                    <!-- getting started btn  -->
+                    <section class="rightAlign">
+                        <button class="blackCTABtn topNavGS">Get Started</button>
+                    </section>
+                </header>
     
-        <main>
-            <section>  
-                Project Item Header Section: Introduce the project with a title, client name, and a brief overview
-            </section>
+                <main>
+                    <section class="one">  
+                        <!-- Project Item Header Section: Introduce the project with a title, client name, and a brief overview -->
+                        <div>
+                            <h2>Amazing Project Name</h2>
 
-            <section>
-                Project Item Body Section: Provide an in-depth description of the project's scope, challenges, and solutions
-            </section>
+                            <p>Client Name: ABC Company, A brief overview of the project.</p>
 
-            <section>
-                Gallery Section: Showcase a gallery of images or videos from the project for visual context
-            </section>
+                            <a href="">Creative</a> &nbsp; 
+                            <a href="">Innovative</a> &nbsp; 
+                            <a href="">Engaging</a>
+                        </div>
+                    </section>
 
-            <section>
-                Testimonial Section: Include a client testimonial specific to the project to provide social proof
-            </section>
+                    <section class="two twoCols">
+                        <!-- Project Item Body Section: Provide an in-depth description of the project's scope, challenges, and solutions -->
+                        <div>
+                            <audio src=""></audio>
+                            <audio src=""></audio>
+                            <audio src=""></audio>
+                        </div>
 
-            <section>
-                Timeline Section: Detail a timeline of the project from conception to completion
-            </section>
+                        <div>
+                            <h2>Discover the Project's Scope</h2>
 
-            <section>
-                Pricing Section: If applicable, explain the pricing or cost structure of completing a similar project
-            </section>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci, quas sed architecto ex, vitae fuga debitis obcaecati esse voluptate, dolore laboriosam eligendi nobis soluta quod suscipit similique qui assumenda.</p>
 
-            <section>
-                CTA Section: Encourage visitors to get in touch to start their own project
-            </section>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci, quas sed architecto ex, vitae fuga debitis obcaecati esse voluptate, dolore laboriosam eligendi nobis soluta quod suscipit similique qui assumenda.</p>
 
-            <section>
-                FAQ Section: Answer any project-specific questions or general inquiries related to project processes
-                
-            </section>
-        </main>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem adipisci, quas sed architecto ex, vitae fuga debitis obcaecati esse voluptate, dolore laboriosam eligendi nobis soluta quod suscipit similique qui assumenda.</p>
+                        </div>
+                    </section>
 
-        <footer>
-            <nav>
-                <h2>Footer</h2>
+                    <section class="three">
+                        <!-- Gallery Section: Showcase a gallery of images or videos from the project for visual context -->
+                        <h2>Project Gallery</h2>
 
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/portfolio.html">Portfolio</a></li>
-                    <li>Projects</li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="/services-detail.html">Services Detail</a></li>
-                </ul>
-            </nav>
-        </footer>
+                        <p>Some stuff goes here</p>
+
+                        <video src=""></video>
+                    </section>
+
+                    <section class="four">
+                        <!-- Testimonial Section: Include a client testimonial specific to the project to provide social proof -->
+
+                        <h2>Happy Customers</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <div class="twoCols">
+                            <article>
+                                <p class="fiveStars">
+                                    &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
+                                </p>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis inventore corrupti, velit placeat obcaecati quisquam?
+                                </p>
+
+                                <div class="twoCols">
+                                    <div class="twoCols">
+                                        <img src="" alt="">
+
+                                        <div>
+                                            <h3>John Doe</h3>
+                                            <h5>Okay then</h5>
+                                        </div>
+                                    </div>
+
+                                    <img src="" alt="">
+                                </div>
+                            </article>
+
+                            <article>
+                                <p class="fiveStars">
+                                    &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;
+                                </p>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis inventore corrupti, velit placeat obcaecati quisquam?
+                                </p>
+
+                                <div class="twoCols">
+                                    <div class="twoCols">
+                                        <img src="" alt="">
+
+                                        <div>
+                                            <h3>John Doe</h3>
+                                            <h5>Okay then</h5>
+                                        </div>
+                                    </div>
+
+                                    <img src="" alt="">
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="seven">
+                        <!-- Timeline Section: Detail a timeline of the project from conception to completion -->
+                        <div>
+                            <h3>Discover</h3>
+
+                            <h2>Project Timeline</h2>
+
+                            <h4>Explore... completion.</h4>
+
+                            <button>Learn More</button><span>Sign Up</span>
+                        </div>
+
+                        <article>
+                            <div>
+                                <strong>Date</strong>
+                            </div>
+
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button>Learn More</button> &nbsp; 
+                                <a href="">Sign Up</a>
+
+                                <img src="" alt="" />
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <strong>Date</strong>
+                            </div>
+
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button>Learn More</button> &nbsp; 
+                                <a href="">Sign Up</a>
+
+                                <img src="" alt="" />
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <strong>Date</strong>
+                            </div>
+
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button>Learn More</button> &nbsp; 
+                                <a href="">Sign Up</a>
+
+                                <img src="" alt="" />
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <strong>Date</strong>
+                            </div>
+
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button>Learn More</button> &nbsp; 
+                                <a href="">Sign Up</a>
+
+                                <img src="" alt="" />
+                            </div>
+                        </article>
+
+                        <article>
+                            <div>
+                                <strong>Date</strong>
+                            </div>
+
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                <button>Learn More</button> &nbsp; 
+                                <a href="">Sign Up</a>
+
+                                <img src="" alt="" />
+                            </div>
+                        </article>
+
+                        <div>
+                            <h3>Discover</h3>
+
+                            <h2>Project Timeline</h2>
+
+                            <h4>Explore... completion.</h4>
+
+                            <button>Learn More</button><span>Sign Up</span>
+                        </div>
+                    </section>
+
+                    <section class="eight">
+                        <!-- Pricing Section: If applicable, explain the pricing or cost structure of completing a similar project -->
+                        <h4>Affordable</h4>
+
+                        <h2>Pricing Options</h2>
+
+                        <p>Choose the plan that fits your needs and budget</p>
+
+                        <button>Monthly</button><button>Yearly</button>
+
+                        <div>
+                            <article>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+
+                                <div>
+                                    <strong>Basic Plan</strong>
+
+                                    <h2>$19/mo</h2>
+                                </div>
+
+                                <div>
+                                    <p>Includes:</p>
+
+                                    <ul>
+                                        <li>&#x2713; Podcast Production Services</li>
+                                        <li>&#x2713; Audio Editing</li>
+                                        <li>&#x2713; Video Editing</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <button>Get Started</button>
+                                </div>
+                            </article>
+
+                            <article>
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+
+                                <div>
+                                    <strong>Business Plan</strong>
+
+                                    <h2>$29/mo</h2>
+                                </div>
+
+                                <div>
+                                    <p>Includes:</p>
+
+                                    <ul>
+                                        <li>&#x2713; Podcast Production Services</li>
+                                        <li>&#x2713; Audio Editing</li>
+                                        <li>&#x2713; Video Editing</li>
+                                        <li>&#x2713; Live Streaming Production</li>
+                                        <li>&#x2713; Photography Services</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <button>Get Started</button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    
+                    <section class="nine cta2Left">
+                        <!-- CTA Section: Encourage visitors to get in touch to start their own project -->
+                        <h2>Transforming Your Vision into Reality</h2>
+
+                        <p>We specialize in podcast, A/V, live streaming production, audio & video editing, and photography services.</p>
+
+                        <button class="blackCTABtn">Contact</button>
+                        <button class="transCTABtn">Learn More</button>
+                    </section>
+
+                    <section class="ten twoCols">
+                        <!-- FAQ Section: Answer any project-specific questions or general inquiries related to project processes -->
+                        <div>
+                            <h2>Inquiries</h2>
+
+                            <p>Have a question about our project processes? Find answere here.</p>
+
+                            <button>Contact Us</button>
+                        </div>
+
+                        <div>
+                            <article>
+                                <h5>How do I start?</h5>
+
+                                <p>A portfolio is a collection of our best work, showcasing our expertise and capabilities.</p>
+                            </article>
+
+                            <article>
+                                <h5>What is a portfolio?</h5>
+
+                                <p>A portfolio is a collection of our best work, showcasing our expertise and capabilities.</p>
+                            </article>
+
+                            <article>
+                                <h5>What is a portfolio?</h5>
+
+                                <p>A portfolio is a collection of our best work, showcasing our expertise and capabilities.</p>
+                            </article>
+
+                            <article>
+                                <h5>What is a portfolio?</h5>
+
+                                <p>A portfolio is a collection of our best work, showcasing our expertise and capabilities.</p>
+                            </article>
+                            
+                            <article>
+                                <h5>What is a portfolio?</h5>
+
+                                <p>A portfolio is a collection of our best work, showcasing our expertise and capabilities.</p>
+                            </article>
+                        </div>
+                    </section>
+                </main>
+
+                <footer>
+                    <nav>
+                        <h2>Footer</h2>
+
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li>Projects</li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/services-detail.html">Services Detail</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>
