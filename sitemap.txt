@@ -4,3 +4,4 @@ https://githubbubber.github.io/portfolio.html
 https://githubbubber.github.io/projects.html
 https://githubbubber.github.io/services-detail.html
 https://githubbubber.github.io/services.html
+https://githubbubber.github.io/terms.html
