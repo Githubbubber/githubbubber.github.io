@@ -14,18 +14,38 @@
     <body>
         <div id="monitor">
             <div id="monitorscreen">
-                <nav>
-                    <h1>Navbar</h1>
-                    
-                    <ul>
-                        <li><a href="/index.html">Home</a></li>
-                        <li>About</li>
-                        <li><a href="/portfolio.html">Portfolio</a></li>
-                        <li><a href="/projects.html">Projects</a></li>
-                        <li><a href="/services.html">Services</a></li>
-                        <li><a href="/services-detail.html">Services Detail</a></li>
-                    </ul>
-                </nav>
+                <header>
+                    <!-- top left nav links -->
+                    <section>
+                        <ul class="navInline">
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li>
+                                <a href="/portfolio.html">Portfolio</a>
+
+                                <label for="portfolio">v</label>
+
+                                <select name="port-menu" id="portfolio" style="display:none">
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                    <option value="three">Three</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- middle logo -->
+                    <section>
+                        <a href="/index.html"><img class="logoTop" src="/public/imgs/logo.jpg" /></a>
+                    </section>
+
+                    <!-- getting started btn  -->
+                    <section class="rightAlign">
+                        <button class="blackCTABtn topNavGS">Get Started</button>
+                    </section>
+                </header>
+
+                <hr/>
 
                 <main>
                     <section class="one twoCols">
