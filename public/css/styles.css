@@ -79,7 +79,7 @@ footer div,
 .threeCols,
 .fourCols {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 2%;
 }
@@ -101,6 +101,20 @@ li {
 main section {
     margin-bottom: 3%;
     padding: 4% 2%;
+}
+
+main section.fullWidth,
+.fullWidthItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section img,
+main section video,
+main section audio {
+    max-width: 100%;
+    height: auto;
 }
 
 main section.cta2Left {
@@ -161,7 +175,6 @@ ul.navInline li {
 }
 
 .carouselContainer div {
-    /* flex: 0 0 calc(47% - 20px); */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -251,13 +264,38 @@ ul.navInline li {
     width: 15%;
 }
 
-@media screen and (max-width: 320px) {
+/* Phone/Mobile Layouts */
+@media only screen and (max-width: 380px) {
+    body {
+        padding: 2%;
+    }
+
+    header section {
+        flex-grow: 1;
+    }
+
+    main section {
+        margin: 5% 5% 10%;
+    }
+
     .logoTop {
         margin: 15% auto;
+        width: 40%;
+    }
+
+    .topNavGS {
+        width: 80%;
+        padding: 10% 4%;
+        margin-top: 20%;
+    }
+
+    .twoCols {
+        flex-direction: column;
     }
 }
 
-@media screen and (min-width: 800px) {
+/* Tablet Layouts */
+@media only screen and (min-width: 800px) {
     .twoCols {
         /* height: 500px; */
     }
