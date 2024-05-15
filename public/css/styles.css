@@ -57,7 +57,7 @@ address {
     font-style: normal;
 }
 
-footer hr {
+footer > hr {
     margin: 0 2%;
 }
 
@@ -74,7 +74,7 @@ strong,
 }
 
 header,
-footer div,
+footer > div,
 .twoCols,
 .threeCols,
 .fourCols {
@@ -90,7 +90,7 @@ header {
 
 header section,
 footer div section,
-.threeCols div {
+.threeCols > div {
     flex: 0 0 calc(33.33% - 20px);
 }
 
@@ -110,9 +110,9 @@ main section.fullWidth,
     align-items: center;
 }
 
-main section img,
-main section video,
-main section audio {
+main section > img,
+main section > video,
+main section > audio {
     max-width: 100%;
     height: auto;
 }
@@ -167,23 +167,6 @@ ul.navInline li {
     display: block;
 }
 
-.carouselContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    height: 200px;
-}
-
-.carouselContainer div {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.carouselContainer div img {
-    width: 100px;
-    height: 200px;
-}
 .centeredCopy {
     text-align: center;
 }
@@ -224,7 +207,7 @@ ul.navInline li {
 }
 
 .fourCols li,
-.fourCols article {
+.fourCols > article {
     flex: 0 0 calc(24% - 20px);
 }
 
@@ -254,7 +237,7 @@ ul.navInline li {
     padding: 4%;
 }
 
-.twoCols div {
+.twoCols > div {
     flex: 0 0 calc(50% - 20px);
 }
 
