@@ -14,9 +14,11 @@
     0% { transform: translateY(340px); }
     100% { transform: translateY(calc(-114px * 9)); }
   }
+
   .filmReel {
     overflow: hidden;
   }
+
   .slider {
     height: 300px;
     display: flex;
@@ -24,13 +26,20 @@
     -webkit-mask: linear-gradient(180deg, #0000, #000 5% 95%, #0000);
     mask: linear-gradient(180deg, #0000, #000 5% 95%, #0000);
   }
+
   .slider .slide-track {
     -webkit-animation: scroll 10s linear infinite;
             animation: scroll 10s linear infinite;
     width: 40%;
   }
+
   .slider .slide-track2 {
     -webkit-animation: scroll2 11s linear infinite;
             animation: scroll2 11s linear infinite;
     width: 40%;
+  }
+
+  .slider .slide-track .slide,
+  .slider .slide-track2 .slide {
+    border: 3px dashed black;
   }
