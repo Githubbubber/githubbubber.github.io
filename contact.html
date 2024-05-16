@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/public/media/imgs/favicon.ico" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+
+    <title>GMP - Contact Us</title>
+</head>
+<body>
+    <div id="monitor">
+        <div id="monitorscreen">
+            <header>
+                <!-- top left nav links -->
+                <section>
+                    <ul class="navInline">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li>
+                            <a href="/portfolio.html">Portfolio</a>
+
+                            <label for="portfolio">v</label>
+
+                            <select name="port-menu" id="portfolio" style="display:none">
+                                <option value="one">One</option>
+                                <option value="two">Two</option>
+                                <option value="three">Three</option>
+                            </select>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- middle logo -->
+                <section>
+                    <a href="/index.html"><img class="logoTop" src="/public/media/imgs/logo.jpg" /></a>
+                </section>
+
+                <!-- getting started btn  -->
+                <section class="rightAlign">
+                    <button class="blackCTABtn topNavGS">Get Started</button>
+                </section>
+            </header>
+
+            <hr/>
+            <main>
+                <section>
+                    <h1>Contact Us</h1>
+
+                    <form action="" method="post">
+                        <input type="email" name="" id="">Email 
+                        <input type="text" name="" id="">Name
+                        <textarea name="" id="">What's up?</textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div>
+                    <!-- Left contact  -->
+                    <section>
+                        <a href="/index.html"><img class="logo" src="/public/media/imgs/logo.jpg" /></a>
+
+                        <small class="contactInfoUnderline">
+                            <address>
+                                <strong>123 Main St.</strong><br />
+                                Level 1, 12 Sample St, Sydney NSW 2000
+                            </address>
+
+                            <p class="contact">
+                                Contact:
+                            </p>
+                            
+                            <p>
+                                <a href="#">Call us now</a> - <a href="#">info@giftedmedia.com</a>
+                            </p>
+                        </small>
+
+                        <div class="socialMediaIcons">
+                            <img src="" alt="[]" />
+                            <img src="" alt="[]" />
+                            <img src="" alt="[]" />
+                            <img src="" alt="[]" />
+                            <img src="" alt="[]" />
+                        </div>
+                    </section>
+
+                    <section></section>
+
+                    <!-- Right - Two columns of links  -->
+                    <section>
+                        <nav>
+                            <ul>
+                                <small class="rightFooterLinks">
+                                    <span class="blockLinks">
+                                        <li><a href="/about.html">About Us</a></li>
+                                        <li><a href="/services.html">Services</a></li>
+                                        <li><a href="/portfolio.html">Portfolio</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </span>
+
+                                    <span class="blockLinks">
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="terms.html">Terms of Use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Sitemap</a></li>
+                                    </span>
+                                </small>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+
+                <hr />
+
+                <div>
+                    <!-- Bottom section -->
+                    <section>
+                        <span>
+                            <small>© <span id="currentYear"></span> Gifted Media Productions. All rights reserved.</small>
+                        </span>
+                    </section>
+
+                    <section></section>
+
+                    <section>
+                        <nav>
+                            <small>
+                                <ul class="navInline footerNav rightAlign">
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="terms.html">Terms and Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cookie Policy</a>
+                                        </li>
+                                </ul>
+                            </small>
+                        </nav>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Current year for copyright notice -->
+    <script>
+        const currentYear = document.getElementById("currentYear");
+
+        currentYear.textContent = new Date().getFullYear().toString();
+    </script>
+</body>
+</html>
