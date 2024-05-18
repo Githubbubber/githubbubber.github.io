@@ -103,8 +103,7 @@ main section {
     padding: 4% 2%;
 }
 
-main section.fullWidth,
-.fullWidthItem {
+main section.fullWidth {
     display: flex;
     justify-content: center;
     align-items: center;
