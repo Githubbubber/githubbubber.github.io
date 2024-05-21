@@ -48,7 +48,7 @@
                 <hr/>
     
                 <main>
-                    <section class="one">  
+                    <section class="one centeredCopy">  
                         <!-- Project Item Header Section: Introduce the project with a title, client name, and a brief overview -->
                         <div>
                             <h2>Amazing Project Name</h2>
@@ -86,7 +86,7 @@
 
                         <p>Some stuff goes here</p>
 
-                        <iframe class="fullWidthItem" width="560" height="315" src="https://www.youtube.com/embed/RgQs7Sn4Y-Y?si=jZRRKpwrq3J7bfit" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RgQs7Sn4Y-Y?si=jZRRKpwrq3J7bfit" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </section>
 
                     <section class="four">
@@ -372,8 +372,8 @@
 
                             <small class="contactInfoUnderline">
                                 <address>
-                                    <strong>123 Main St.</strong><br />
-                                    Level 1, 12 Sample St, Sydney NSW 2000
+                                    <strong>221 E Hartsdale Avenue</strong><br />
+                                    Suite D, Hartsdale, NY 10530
                                 </address>
 
                                 <p class="contact">
@@ -381,7 +381,7 @@
                                 </p>
                                 
                                 <p>
-                                    <a href="#">Call us now</a> - <a href="#">info@giftedmedia.com</a>
+                                    <a href="#">Call us now</a> - <a href="#">giftedmediap@gmail.com</a>
                                 </p>
                             </small>
 
@@ -405,15 +405,15 @@
                                             <li><a href="/about.html">About Us</a></li>
                                             <li><a href="/services.html">Services</a></li>
                                             <li><a href="/portfolio.html">Portfolio</a></li>
-                                            <li><a href="#">Testimonials</a></li>
+                                            <li><a href="/testimonial.html">Testimonials</a></li>
                                             <li><a href="#">Contact Us</a></li>
                                         </span>
 
                                         <span class="blockLinks">
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="/faq.html">FAQ</a></li>
+                                            <li><a href="/blog.html">Blog</a></li>
                                             <li><a href="#">Terms of Use</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
                                             <li><a href="#">Sitemap</a></li>
                                         </span>
                                     </small>
@@ -439,13 +439,13 @@
                                 <small>
                                     <ul class="navInline footerNav rightAlign">
                                             <li>
-                                                <a href="#">Privacy Policy</a>
+                                                <a href="/privacy-policy.html">Privacy Policy</a>
                                             </li>
                                             <li>
-                                                <a href="terms.html">Terms and Conditions</a>
+                                                <a href="/terms.html">Terms and Conditions</a>
                                             </li>
                                             <li>
-                                                <a href="#">Cookie Policy</a>
+                                                <a href="/cookie-policy.html">Cookie Policy</a>
                                             </li>
                                     </ul>
                                 </small>
@@ -455,5 +455,31 @@
                 </footer>
             </div>
         </div>
+
+        <!-- Current year for copyright notice -->
+        <script>
+            const currentYear = document.getElementById("currentYear");
+
+            currentYear.textContent = new Date().getFullYear().toString();
+        </script>
+
+        <!-- Accordion for section thirteen -->
+        <script>
+            const acc = document.getElementsByClassName("accordion");
+
+            for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+
+                    const panel = this.nextElementSibling;
+
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

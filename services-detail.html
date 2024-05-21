@@ -94,7 +94,7 @@
                         </div>
                     </section>
 
-                    <section class="three threeCols centerAlign">
+                    <section class="three threeCols centeredCopy">
                         <!-- Features List Section: List up to 3 other important features or ideas related to the service -->
                         <article>
                             <img src="" alt="">
@@ -102,7 +102,7 @@
                             <h3>Other Key Features</h3>
 
                             <p>We work closely with you to create engaging and professional podcasts. From concept development to final editing, we ensure your podcast stands out.</p>
-                            <button>Learn More</button><a href="http://">Get Started</a>
+                            <button>Learn More</button> &nbsp; <a href="http://">Get Started</a>
                         </article>
 
                         <article>
@@ -111,7 +111,7 @@
                             <h3>High-Quality Podcast Production</h3>
 
                             <p>We provide comprehensive audio and video production services, handling everything from pre-production planning to post-production editing.</p>
-                            <button>Learn More</button><a href="http://">Get Started</a>
+                            <button>Learn More</button> &nbsp; <a href="http://">Get Started</a>
                         </article>
 
                         <article>
@@ -120,7 +120,7 @@
                             <h3>Professional A/V Live Streaming</h3>
 
                             <p>We specialize in live streaming production, ensuring your events are broadcasted seamlessly to a global audience.</p>
-                            <button>Learn More</button><a href="http://">Get Started</a>
+                            <button>Learn More</button> &nbsp; <a href="http://">Get Started</a>
                         </article>
                     </section>
 
@@ -425,8 +425,8 @@
 
                             <small class="contactInfoUnderline">
                                 <address>
-                                    <strong>123 Main St.</strong><br />
-                                    Level 1, 12 Sample St, Sydney NSW 2000
+                                    <strong>221 E Hartsdale Avenue</strong><br />
+                                    Suite D, Hartsdale, NY 10530
                                 </address>
 
                                 <p class="contact">
@@ -434,7 +434,7 @@
                                 </p>
                                 
                                 <p>
-                                    <a href="#">Call us now</a> - <a href="#">info@giftedmedia.com</a>
+                                    <a href="#">Call us now</a> - <a href="#">giftedmediap@gmail.com</a>
                                 </p>
                             </small>
 
@@ -458,15 +458,15 @@
                                             <li><a href="/about.html">About Us</a></li>
                                             <li><a href="/services.html">Services</a></li>
                                             <li><a href="/portfolio.html">Portfolio</a></li>
-                                            <li><a href="#">Testimonials</a></li>
+                                            <li><a href="/testimonial.html">Testimonials</a></li>
                                             <li><a href="#">Contact Us</a></li>
                                         </span>
 
                                         <span class="blockLinks">
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="/faq.html">FAQ</a></li>
+                                            <li><a href="/blog.html">Blog</a></li>
                                             <li><a href="#">Terms of Use</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
                                             <li><a href="#">Sitemap</a></li>
                                         </span>
                                     </small>
@@ -492,13 +492,13 @@
                                 <small>
                                     <ul class="navInline footerNav rightAlign">
                                             <li>
-                                                <a href="#">Privacy Policy</a>
+                                                <a href="/privacy-policy.html">Privacy Policy</a>
                                             </li>
                                             <li>
-                                                <a href="terms.html">Terms and Conditions</a>
+                                                <a href="/terms.html">Terms and Conditions</a>
                                             </li>
                                             <li>
-                                                <a href="#">Cookie Policy</a>
+                                                <a href="/cookie-policy.html">Cookie Policy</a>
                                             </li>
                                     </ul>
                                 </small>
@@ -508,5 +508,31 @@
                 </footer>
             </div>
         </div>
+
+        <!-- Current year for copyright notice -->
+        <script>
+            const currentYear = document.getElementById("currentYear");
+
+            currentYear.textContent = new Date().getFullYear().toString();
+        </script>
+
+        <!-- Accordion for section thirteen -->
+        <script>
+            const acc = document.getElementsByClassName("accordion");
+
+            for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+
+                    const panel = this.nextElementSibling;
+
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

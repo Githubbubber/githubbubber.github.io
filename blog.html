@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" type="image/x-icon" href="/public/media/imgs/favicon.ico" />
+        <link rel="stylesheet" href="/public/css/styles.css" />
+
+        <title>GMP - Blog</title>
+    </head>
+
+    <body>
+        <div id="monitor">
+            <div id="monitorscreen">
+                <header>
+                    <!-- top left nav links -->
+                    <section>
+                        <ul class="navInline">
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li>
+                                <a href="/portfolio.html">Portfolio</a>
+
+                                <label for="portfolio">v</label>
+
+                                <select name="port-menu" id="portfolio" style="display:none">
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                    <option value="three">Three</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- middle logo -->
+                    <section>
+                        <a href="/index.html"><img class="logoTop" src="/public/media/imgs/logo.jpg" /></a>
+                    </section>
+
+                    <!-- getting started btn  -->
+                    <section class="rightAlign">
+                        <button class="blackCTABtn topNavGS">Get Started</button>
+                    </section>
+                </header>
+
+                <hr/>
+
+                <main>
+                    <section class="one">
+                        <div>
+                            <!-- Blog -->
+                            <h1>A blog</h1>
+
+                            <p>
+                                At Gifted Media Productions, we specialize in providing top-notch podcast production services. Our team of experts will help you create high-quality audio content that engages your audience and elevates your brand. Whether you're just starting out or looking to take your podcast to the next level, we have the skills and experience to bring your vision to life.
+                            </p>
+                        </div>
+                    </section>
+                </main>
+
+                <footer>
+                    <div>
+                        <!-- Left contact  -->
+                        <section>
+                            <a href="/index.html"><img class="logo" src="/public/media/imgs/logo.jpg" /></a>
+
+                            <small class="contactInfoUnderline">
+                                <address>
+                                    <strong>221 E Hartsdale Avenue</strong><br />
+                                    Suite D, Hartsdale, NY 10530
+                                </address>
+
+                                <p class="contact">
+                                    Contact:
+                                </p>
+                                
+                                <p>
+                                    <a href="#">Call us now</a> - <a href="#">giftedmediap@gmail.com</a>
+                                </p>
+                            </small>
+
+                            <div class="socialMediaIcons">
+                                <img src="" alt="[]" />
+                                <img src="" alt="[]" />
+                                <img src="" alt="[]" />
+                                <img src="" alt="[]" />
+                                <img src="" alt="[]" />
+                            </div>
+                        </section>
+
+                        <section></section>
+
+                        <!-- Right - Two columns of links  -->
+                        <section>
+                            <nav>
+                                <ul>
+                                    <small class="rightFooterLinks">
+                                        <span class="blockLinks">
+                                            <li><a href="/about.html">About Us</a></li>
+                                            <li><a href="/services.html">Services</a></li>
+                                            <li><a href="/portfolio.html">Portfolio</a></li>
+                                            <li><a href="/testimonial.html">Testimonials</a></li>
+                                            <li><a href="/contact.html">Contact Us</a></li>
+                                        </span>
+
+                                        <span class="blockLinks">
+                                            <li><a href="/faq.html">FAQ</a></li>
+                                            <li><a href="/blog.html">Blog</a></li>
+                                            <li><a href="/terms.html">Terms of Use</a></li>
+                                            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                                            <li><a href="/sitemap.txt">Sitemap</a></li>
+                                        </span>
+                                    </small>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+
+                    <hr />
+
+                    <div>
+                        <!-- Bottom section -->
+                        <section>
+                            <span>
+                                <small>© <span id="currentYear"></span> Gifted Media Productions. All rights reserved.</small>
+                            </span>
+                        </section>
+
+                        <section></section>
+
+                        <section>
+                            <nav>
+                                <small>
+                                    <ul class="navInline footerNav rightAlign">
+                                            <li>
+                                                <a href="/privacy-policy.html">Privacy Policy</a>
+                                            </li>
+                                            <li>
+                                                <a href="/terms.html">Terms and Conditions</a>
+                                            </li>
+                                            <li>
+                                                <a href="/cookie-policy.html">Cookie Policy</a>
+                                            </li>
+                                    </ul>
+                                </small>
+                            </nav>
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Current year for copyright notice -->
+        <script>
+            const currentYear = document.getElementById("currentYear");
+
+            currentYear.textContent = new Date().getFullYear().toString();
+        </script>
+
+        <!-- Accordion for section thirteen -->
+        <script>
+            const acc = document.getElementsByClassName("accordion");
+
+            for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+
+                    const panel = this.nextElementSibling;
+
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
