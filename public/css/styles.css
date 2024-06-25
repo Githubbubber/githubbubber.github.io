@@ -133,6 +133,27 @@ ul.navInline li {
 .centeredCopy {
     text-align: center;
 }
+
+.clientCopy {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.testimonialCopy {
+    font-size: 1.6em;
+}
+.webflowSize {
+    width: 32px !important;
+    height: 24px !important;
+    padding-right: 5px;
+}
+
+.relumeSize {
+    height: 32px;
+    width: 32px;
+    padding-right: 5px;
+}
+
 .contact,
 .rightFooterLinks,
 .socialMediaIcons {
